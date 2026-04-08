@@ -24,3 +24,5 @@ pg_dump -U myuser -F c -f mydatabase_backup.dump mydatabase
 ```bash
 pg_restore -U myuser -d mydatabase -C mydatabase_backup.dump
 ```
+* -d mydatabase — имя целевой базы.
+* -C — создать базу данных перед восстановлением (если её нет).
