@@ -15,3 +15,7 @@
 ```bash
 pg_dump -U myuser -F c -f mydatabase_backup.dump mydatabase
 ```
+* -U myuser — имя пользователя.
+* -F c — формат дампа (custom, рекомендуется для гибкости).
+* -f mydatabase_backup.dump — имя выходного файла.
+* mydatabase — имя базы данных.
