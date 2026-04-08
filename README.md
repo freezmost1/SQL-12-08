@@ -19,3 +19,8 @@ pg_dump -U myuser -F c -f mydatabase_backup.dump mydatabase
 * -F c — формат дампа (custom, рекомендуется для гибкости).
 * -f mydatabase_backup.dump — имя выходного файла.
 * mydatabase — имя базы данных.
+* 
+Для восстановления базы из резервной копии используется pg_restore:
+```bash
+pg_restore -U myuser -d mydatabase -C mydatabase_backup.dump
+```
